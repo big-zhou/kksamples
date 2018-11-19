@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+	">
+	
+	<!-- 扫描Service -->
+	<context:component-scan base-package="com.kk">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<!-- <bean id="dataSource" class="">
+		<property name=""></property>
+		<property name=""></property>
+		<property name=""></property>
+	</bean>
+	创建sqlSessionFactory,同时指定数据源
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value=""></property> 		mybatis-config.xml
+		<property name="mapperLocations" value=""></property>		mybatis-mapper.xml
+		<property name="dataSource" ref="dataSource"></property>	数据源
+	</bean>
+	
+	spring与myBatis整合配置,扫描所有dao
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.run.dao"></property>
+		<property name="sqlSessionFactory" value="sqlSessionFactory"></property>
+	</bean> -->
+</beans>
