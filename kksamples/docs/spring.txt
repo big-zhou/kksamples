@@ -1,0 +1,12 @@
+springweb项目：
+1.启动：
+在web.xml中配置的org.springframework.web.context.ContextLoaderListener
+contextInitialized(ServletContextEvent)方法
+
+org.springframework.web.context.ContextLoader 的initWebApplicationContext()方法
+
+
+
+
+
+
